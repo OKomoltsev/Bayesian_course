@@ -1,0 +1,16 @@
+# Bayesian inference course — minimal dependencies
+#
+# numpy 2.0 is a hard requirement, not a preference:
+#   np.trapezoid                          (renamed from np.trapz in 2.0)
+#   np.quantile(..., weights=...)         (weights added in 2.0)
+# Both are used throughout lecture 3.
+
+numpy>=2.0
+scipy
+matplotlib
+
+corner          # corner plots of multi-parameter posteriors
+cmcrameri       # perceptually uniform colormaps
+cmocean         # perceptually uniform colormaps
+
+ipykernel       # run the notebooks (also supplies IPython, used by bayes_tools)
